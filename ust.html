@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UST Files | N1VO9の墓所</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JS -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+
+        <div class="row">
+            <div class="col span-12">
+                <div class="head">
+                    <h1>
+                        <a href="index.html">▜▚▙.</a>
+                    </h1>
+                    <div class="telbox">UST配布</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col span-12">
+                <nav>
+                    <div id="open"></div>
+                    <div id="close"></div>
+
+                    <div id="navi">
+                        <ul>
+                            <li><a href="index.html">ホーム</a></li>
+                            <li><a href="characters.html">音源配布</a></li>
+                            <li><a href="ust.html">UST配布</a></li>
+                            <li><a href="terms-and-conditions.html">利用規約</a></li>
+                            <li><a href="youtube.html">YouTube</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<main>
+    <div class="container">
+
+        <!-- Breadcrumb -->
+        <ul class="breadcrumb">
+            <li><a href="index.html">ホーム</a> &gt;</li>
+            <li>UST配布</li>
+        </ul>
+
+        <!-- UST Library -->
+        <section class="ust-section">
+
+            <h2 class="section-title underline">UST Library</h2>
+
+            <p id="ust-count" style="font-size:0.85rem; opacity:0.7; margin-bottom:1.5rem;"></p>
+
+
+            <!-- 最新4件（JSで描画） -->
+            <div class="ust-list" id="ust-list">
+                <!-- ust.js により最新4件が表示される -->
+            </div>
+
+            <!-- すべて表示 -->
+            <div class="ust-more" style="margin-top:2rem;">
+                <a href="ust-all.html" class="btn btn-outline"target="_blank">
+                    <u>すべて表示</u>
+                </a>
+            </div>
+
+        </section>
+
+        <!-- Terms -->
+        <section class="ust-terms">
+            <h2 class="section-title underline">利用規約</h2>
+            <ul class="terms-list">
+                <li>再配布禁止</li>
+                <li>商用利用不可</li>
+                <li>
+                    クレジット表記は任意ですが、記載する場合は「N1VO9-니부쿠」または動画リンクをご利用ください。
+                </li>
+            </ul>
+        </section>
+
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="row_main">
+
+            <div class="col span-4">
+                <h5>UST</h5>
+                <p>UTAU用USTデータ配布ページです。<br>
+                <a href="terms-and-conditions.html"><u>利用規約</u></a>をご確認の上ご利用ください。
+                <br>作品・設定は予告なく変更される場合があります。 </p>
+            </div>
+
+                <h5>SNS</h5>
+            <div class="side-by-side">
+                <a href="https://x.com/@21vo9" target="_blank">X(旧Twitter)</a>
+                <a href="https://youtube.com/@nycta-nidoku?si=e53RmFhndZMLWxGj" target="_blank">YouTube</a>
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </div>
+</footer>
+
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p>&copy; 2025 N1VO9の墓所</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<p id="pagetop">
+    <a href="#">TOP</a>
+</p>
+
+<!-- UST JS -->
+<script src="js/ust-data.js"></script>
+<script src="js/ust.js"></script>
+
+</body>
+</html>

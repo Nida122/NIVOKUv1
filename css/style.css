@@ -1,0 +1,495 @@
+@charset "UTF-8";
+@import url("grid.css");
+
+/* =================================================
+   Design Tokens
+================================================= */
+:root {
+    --primary: #1a1a1a;
+    --secondary: #f2f2f2;
+    --surface: #ffffff;
+    --line: #dddddd;
+    --accent: #cccccc;
+
+    --font-heading: 'Inter', sans-serif;
+    --font-body: 'Noto Sans JP', sans-serif;
+}
+
+/* =================================================
+   Reset / Base
+================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--primary);
+    background-color: var(--secondary);
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+a:hover {
+    opacity: 0.6;
+}
+
+ul {
+    list-style: none;
+}
+
+main {
+    margin: 5rem 0;
+}
+
+.underline {
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 0.5rem;
+}
+
+/* =================================================
+   Header
+================================================= */
+.head {
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.head h1 {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+
+.telbox {
+    margin-left: auto;
+    font-size: 2rem;
+    font-family: var(--font-heading);
+    font-weight: 600;
+}
+
+/* =================================================
+   Navigation
+================================================= */
+nav ul {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+nav a {
+    padding: 0.75rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+/* =================================================
+   Breadcrumb
+================================================= */
+.breadcrumb {
+    margin-bottom: 2rem;
+}
+
+.breadcrumb li {
+    display: inline-block;
+    font-size: 0.8rem;
+}
+
+.breadcrumb li a {
+    opacity: 0.6;
+}
+
+/* =================================================
+   Characters Intro Text
+================================================= */
+.site-intro {
+    margin: 3rem 0 4rem;
+}
+
+.site-intro p {
+    font-size: 1.15rem;
+    line-height: 2;
+    opacity: 0.9;
+}
+
+.ust-terms {
+    color: #303030;
+}
+
+.ust-terms0 {
+    color: #818181;
+}
+
+/* =================================================
+   Voicebank List (Cards)
+================================================= */
+.voicebank-section {
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.voicebank-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1.6rem;
+}
+
+.voicebank-card {
+    background-color: var(--surface);
+    border: 1px solid var(--line);
+    padding: 0.9rem;
+    text-align: center;
+    transition: all 0.25s ease;
+}
+
+.voicebank-card:hover {
+    border-color: var(--primary);
+    box-shadow: 3px 3px 0 var(--primary);
+    transform: translateY(-2px);
+}
+
+.voicebank-card img {
+    width: 320px;
+    max-width: 100%;
+    margin: 0 auto 0.8rem;
+    border: 1px solid var(--line);
+}
+
+.voicebank-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.voicebank-card .type {
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+/* =================================================
+   Voicebank Detail Page
+================================================= */
+.voicebank-detail {
+    margin-bottom: 4rem;
+}
+
+/* Character Name */
+.character-name {
+    margin-bottom: 2.5rem;
+}
+
+.character-name .ruby {
+    font-size: 0.85rem;
+    letter-spacing: 0.2em;
+    color: var(--accent);
+}
+
+.character-name .name-main {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.character-name .name-en {
+    font-size: 0.9rem;
+    opacity: 0.5;
+}
+
+/* Profile Table */
+.profile-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0 3rem;
+}
+
+.profile-table tr {
+    border-bottom: 1px solid var(--line);
+}
+
+.profile-table th,
+.profile-table td {
+    padding: 0.8rem 0.6rem;
+    font-size: 0.95rem;
+    vertical-align: top;
+}
+
+.profile-table th {
+    width: 130px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    opacity: 0.85;
+}
+
+/* Other Settings */
+.sub-title {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    margin: 3rem 0 1rem;
+}
+
+.setting-list {
+    margin-left: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.setting-list li {
+    list-style: disc;
+    margin-bottom: 0.6rem;
+}
+
+/* =================================================
+   Standing Image + Switch
+================================================= */
+.character-visual {
+    position: relative;
+    text-align: right;
+    padding: 2rem;
+}
+
+.character-visual img {
+    display: none;
+    max-width: 360px;
+    margin-left: auto;
+}
+
+.character-visual img.active {
+    display: block;
+}
+
+.image-switch {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+.image-switch button {
+    background: transparent;
+    border: 1px solid var(--line);
+    padding: 0.25rem 0.6rem;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+
+.image-switch button:hover {
+    background-color: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+}
+
+/* =================================================
+   UST List
+================================================= */
+.ust-list {
+    border-top: 1px solid var(--line);
+}
+
+.ust-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--line);
+    gap: 2rem;
+}
+
+.ust-title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+.ust-meta {
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+.ust-links {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.ust-links .btn {
+    padding: 0.6rem 1.4rem;
+    border: 1px solid var(--primary);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+/* =================================================
+   Footer
+================================================= */
+footer {
+    background-color: var(--secondary);
+    padding: 4rem 0;
+    border-top: 1px solid var(--line);
+}
+
+footer h5 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+footer p,
+footer a {
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+.copyright {
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: var(--surface);
+    font-size: 0.75rem;
+}
+
+/* =================================================
+   Page Top
+================================================= */
+#pagetop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#pagetop a {
+    background-color: var(--primary);
+    color: var(--secondary);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* =================================================
+   Responsive
+================================================= */
+@media screen and (max-width: 768px) {
+
+    .voicebank-card img {
+        width: 200px;
+    }
+
+    .character-name .name-main {
+        font-size: 2.2rem;
+    }
+
+    .character-visual img {
+        max-width: 230px;
+        margin: 0 auto;
+    }
+
+    .ust-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ust-links {
+        align-self: flex-end;
+    }
+}
+
+/* =========================
+   Pagination
+========================= */
+
+#pagination {
+    display: flex;
+    justify-content: center; /* 中央寄せ */
+    gap: 0.5rem;
+    margin-top: 3rem;
+}
+
+.page-btn {
+    background: transparent;
+    border: 1px solid var(--line);
+    padding: 0.4rem 0.8rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.page-btn:hover:not(:disabled) {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+.page-btn:disabled {
+    opacity: 0.4;
+    cursor: default;
+}
+
+.page-btn.is-active {
+    border-color: var(--primary);
+}
+
+
+.side-by-side {
+    display: flex;
+  width: auto;
+  align-items: center;
+    gap:50px;
+}
+
+.container {
+    width: 90%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   YouTube Channel Cards
+========================= */
+
+.card-link {
+    display: block;
+    color: inherit;
+}
+
+.card-link:hover {
+    opacity: 1;
+}
+
+.CH-card img {
+    width: 125px;
+    height: 125px;
+    margin: 0 auto 0.8rem;
+    border-radius: 50%;
+    border: 1px solid var(--line);
+    object-fit: cover;
+}
