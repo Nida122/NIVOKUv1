@@ -58,11 +58,11 @@ const ustData = [
         youtube_original: "https://youtu.be/jkoNeenWqls?si=cuWaDYoydd3a3U0Z",
     },
     {
-        title: "-- / --",
-        date: "20--.--.--",
-        ust: "https://bowlroll.net/file/------",
+        title: "クロガネバレットタイム / Etori",
+        date: "2026.01.08",
+        ust: "https://bowlroll.net/file/347265",
         youtube_cover: "https://youtube.com/yyyyy",
-        youtube_original: "https://youtube.com/yyyyy",
+        youtube_original: "https://youtu.be/mhyQwW3-dfo?si=Wals-Ub4g0yjmXbL",
     },
     {
         title: "-- / --",
