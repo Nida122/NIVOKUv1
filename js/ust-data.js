@@ -65,11 +65,11 @@ const ustData = [
         youtube_original: "https://youtu.be/mhyQwW3-dfo?si=Wals-Ub4g0yjmXbL",
     },
     {
-        title: "-- / --",
-        date: "20--.--.--",
-        ust: "https://bowlroll.net/file/------",
+        title: "キモダチアンセム / ユゥレイの怪奇譚",
+        date: "2026.01.12",
+        ust: "https://bowlroll.net/file/347422",
         youtube_cover: "https://youtube.com/yyyyy",
-        youtube_original: "https://youtube.com/yyyyy",
+        youtube_original: "https://youtu.be/NCeyMeE_FYY?si=SmMDfIPl6N77HC-R",
     },
     {
         title: "-- / --",
