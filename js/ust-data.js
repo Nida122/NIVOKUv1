@@ -72,6 +72,13 @@ const ustData = [
         youtube_original: "https://youtu.be/NCeyMeE_FYY?si=SmMDfIPl6N77HC-R",
     },
     {
+        title: "4nim0sity99.999999999% / イチ",
+        date: "2026.01.15",
+        ust: "https://bowlroll.net/file/347539",
+        youtube_cover: "https://youtube.com/yyyyy",
+        youtube_original: "https://youtu.be/sIyYgcWnG94?si=WFo9emhj17p4KqdJ",
+    },
+    {
         title: "-- / --",
         date: "20--.--.--",
         ust: "https://bowlroll.net/file/------",
