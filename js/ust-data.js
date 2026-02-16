@@ -79,10 +79,10 @@ const ustData = [
         youtube_original: "https://youtu.be/sIyYgcWnG94?si=WFo9emhj17p4KqdJ",
     },
     {
-        title: "-- / --",
-        date: "20--.--.--",
-        ust: "https://bowlroll.net/file/------",
-        youtube_cover: "https://youtube.com/yyyyy",
-        youtube_original: "https://youtube.com/yyyyy",
+        title: "ミス・ペトロール / Sohbana",
+        date: "2026.02.16",
+        ust: "https://bowlroll.net/file/349058",
+        youtube_cover: "https://youtu.be/7K3YVR4LX3I",
+        youtube_original: "https://youtu.be/_R_jxm4Rdec?si=ZkVrJAnMPYLBkr2B",
     }
 ];
